@@ -1,0 +1,504 @@
+.body{
+background-color:#111111;
+display: flex;
+overflow-x: hidden;
+}
+
+.navbar{
+    color: #a3a3a3;
+    display: flex;
+    padding-left: 700px;
+    list-style: none;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 16px;
+    position: relative;
+}
+
+.menu-item {
+    color: #a3a3a3;
+    cursor: pointer;
+}
+
+.menu-item.active {
+    color: #03e9b0; /* Cor ativa (azul) */
+}
+
+
+.krona-one-regular {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #inicio:hover, #trabalhos:hover, #dumps:hover, #contato:hover{
+    color: #03e9b0;
+    cursor: pointer;
+}
+
+
+#fotoAlex{
+    width:201px;
+    height:150px;
+    right: 1150px;
+    position: relative;
+    top: -5px;
+    z-index: 4;
+}
+
+#fotoAlex:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: 0.2s;
+}
+
+#texto1{
+    right: 1280px;
+    position: relative;
+    top: 120px;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 97px;
+    color: aliceblue;
+}
+
+#gb{
+    right: 1010px;
+    position: relative;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 97px;
+    top: -67px;
+}
+
+#texto2{
+    color: #a3a3a3;
+    display:flex;
+    right: 1280px;
+    z-index: 3;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 16px;
+    position: relative;
+    top: -120px;
+}
+
+#videoInicio{
+    display: flex;
+    right: 1290px;
+    position: relative;
+    top: -90px;
+}
+
+#contatoTitulo{
+    right: 1250px;
+    position: relative;
+    top: 190px;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 35px;
+    color: aliceblue;
+}
+
+#emailIcon{
+    right: 1250px;
+    position: relative;
+    top: 230px;
+}
+
+#twitterIcon{
+    right: 1278px;
+    position: relative;
+    top: 275px;
+}
+
+#youtubeIcon{
+    right: 1305px;
+    position: relative;
+    top: 320px;
+}
+
+#curriculoIcon{
+    right: 1333px;
+    position: relative;
+    top: 365px;
+}
+
+#emailTexto{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1220px;
+    top: 185px;
+    font-size: 18px;
+}
+
+#twitterTexto{ 
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1220px;
+    top: 192px;
+    font-size: 16px;
+}
+
+#youtubeTexto{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1220px;
+    top: 202px;
+    font-size: 16px;
+}
+
+#curriculoTexto{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1220px;
+    top: 216px;
+    font-size: 16px;
+}
+
+#subtitulo4{
+color: #a3a3a3;
+display:flex;
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+right: 1250px;
+top: 192px;
+font-size: 20px;
+width: 300px;
+white-space: nowrap;
+}
+
+#emailTexto:hover, #twitterTexto:hover, #youtubeTexto:hover, #curriculoTexto:hover{
+    color: #03e9b0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#subtitulo3{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1100px;
+    top: 145px;
+    font-size: 20px;
+    width: 300px;
+    white-space: nowrap;
+}
+
+#DumpsTitulo{
+    right: 830px;
+    position: relative;
+    top: 150px;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 27px;
+    color: aliceblue;
+}
+
+#filtroTexto{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1300px;
+    top: 145px;
+    font-size: 17px;
+    width: 300px;
+    white-space: nowrap;
+}
+
+#ano2024{
+color: #a3a3a3;
+display:flex;
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+right: 1300px;
+top: 137px;
+font-size: 18px;
+width: 300px;
+white-space: nowrap;
+}
+
+#ano2025{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1250px;
+    top: 116px;
+    font-size: 18px;
+    width: 300px;
+    white-space: nowrap;
+}
+
+#ano2024:hover, #ano2025:hover{
+    cursor: pointer;
+}
+
+
+#CapaDump1{
+    display: flex;
+    width: 256px;
+    height: 144px;
+    position: relative;
+    right: 1200px;
+    top: 160px;
+    border-radius: 9px;
+}
+
+#CapaDump2{
+    display: flex;
+    width: 256px;
+    height: 144px;
+    position: relative;
+    right: 900px;
+    top: 16px;
+    border-radius: 9px;
+}
+
+#CapaDump3{
+    display: flex;
+    width: 256px;
+    height: 144px;
+    position: relative;
+    right: 600px;
+    top: -127px;
+    border-radius: 9px;
+}
+
+
+#CapaDump1:hover, #CapaDump2:hover, #CapaDump3:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: 0.1s;
+}
+
+#subtitulo2{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1250px;
+    top: 145px;
+    font-size: 20px;
+    width: 300px;
+    white-space: nowrap;
+}
+
+#TrabalhosTitulo{
+    right: 850px;
+    position: relative;
+    top: 150px;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 27px;
+    color: aliceblue;
+}
+
+#CapaTrabalho1{
+    display: flex;
+    width: 312px;
+    height: 194px;
+    position: relative;
+    right: 1270px;
+    top: 160px;
+    border-radius: 9px;
+}
+
+#CapaTrabalho2{
+    display: flex;
+    width: 312px;
+    height: 194px;
+    position: relative;
+    right: 910px;
+    top: -34px;
+    border-radius: 9px;
+}
+
+#CapaTrabalho3{
+    display: flex;
+    width: 312px;
+    height: 194px;
+    position: relative;
+    right: 550px;
+    top: -227px;
+    border-radius: 9px;
+}
+
+#CapaTrabalho1:hover, #CapaTrabalho2:hover, #CapaTrabalho3:hover, #CapaTrabalho4:hover, #CapaTrabalho5:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: 0.1s;
+}
+
+#VideosCurtosTitulo{
+    right: 880px;
+    position: relative;
+    top: 150px;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 27px;
+    color: aliceblue;
+}
+
+#CapaShort1{
+    display: flex;
+    width: 194px;
+    height: 312px;
+    position: relative;
+    right: 1270px;
+    top: 160px;
+    border-radius: 9px;
+}
+
+#CapaShort1:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: 0.1s;
+}
+
+#subtitulo3{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1125px;
+    top: 145px;
+    font-size: 20px;
+    width: 300px;
+    white-space: nowrap;
+}
+
+#VideosLongosTitulo{
+    right: 880px;
+    position: relative;
+    top: 150px;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 27px;
+    color: aliceblue;
+}
+
+#estudosTitulo{
+    right: 825px;
+    position: relative;
+    top: 150px;
+    font-family: Krona One, ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    font-size: 27px;
+    color: aliceblue;
+}
+
+#subtitulo5{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 930px;
+    top: 145px;
+    font-size: 20px;
+    width: 300px;
+    white-space: nowrap;
+}
+
+#CapaTrabalho4{
+    display: flex;
+    width: 312px;
+    height: 194px;
+    position: relative;
+    right: 1270px;
+    top: -180px;
+    border-radius: 9px;
+}
+
+#CapaTrabalho5{
+    display: flex;
+    width: 312px;
+    height: 194px;
+    position: relative;
+    right: 910px;
+    top: -374px;
+    border-radius: 9px;
+}
+
+#Assinatura{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1040px;
+    top: -50px;
+    font-size: 16px;
+    width: 300px;
+    white-space: nowrap;
+}
+
+#Assinatura2{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 608px;
+    top: -83px;
+    font-size: 16px;
+    width: 300px;
+    white-space: nowrap;
+    color: blueviolet;
+}
+
+#Assinatura3{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1040px;
+    top: 330px;
+    font-size: 16px;
+    width: 300px;
+    white-space: nowrap;
+}
+
+#Assinatura4{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 608px;
+    top: 296px;
+    font-size: 16px;
+    width: 300px;
+    white-space: nowrap;
+    color: blueviolet;
+}
+
+#Assinatura5{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 1040px;
+    top: -50px;
+    font-size: 16px;
+    width: 300px;
+    white-space: nowrap;
+}
+
+#Assinatura6{
+    color: #a3a3a3;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 608px;
+    top: -84px;
+    font-size: 16px;
+    width: 300px;
+    white-space: nowrap;
+    color: blueviolet;
+}
+
+#Assinatura2:hover, #Assinatura4:hover, #Assinatura6:hover{
+    cursor: pointer;
+}

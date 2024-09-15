@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tituloPagina">AlexGb</title>
+    <link rel="stylesheet" href="styleAlex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/iconAlex.png" type="image/x-icon">
+
+</head>
+<body class="body">
+    <div class="container">
+    <li>
+        <ul class="navbar">
+            <li class="menu-item active" id="inicio" onclick="acessarInicio()">INÍCIO</li>
+            <li class="menu-item" id="trabalhos" onclick="acessarTrabalhos()">TRABALHOS</li>
+            <li class="menu-item" id="dumps" onclick="acessarDumps()">DUMPS</li>
+            <li class="menu-item" id="contato" onclick="acessarContato()">CONTATO E CURRÍCULO</li>
+        </ul>
+    </li>
+    </div>
+
+    <img class="menu-item active" id="fotoAlex" onclick="voltar()" src="imagens/iconAlex.png" alt="">
+
+    <div id="conteudo">
+
+    <h1 id="texto1">Alex<h1 id="gb" style="color: #03e9b0;">Gb</h1></h1>
+      <h2 id="texto2">Editor & Motion designer.</h2>    
+      <iframe id="videoInicio" width="1050" height="600" src="https://www.youtube.com/embed/f50zz2t54L0?si=hITNBSOeu6ZSGQIb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <p id="Assinatura">© 2024 AlexGB. Todos os direitos reservados. developed by <p id="Assinatura2" onclick="acessarGitHub()">Guilherme Neris </p></p>
+</body>
+</html>
+
+<script>
+
+const menuItems = document.querySelectorAll('.menu-item');
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Remove a classe "active" de todos os itens
+        menuItems.forEach(i => i.classList.remove('active'));
+
+        // Adiciona a classe "active" ao item clicado
+        item.classList.add('active');
+    });
+});
+
+
+function acessarInicio(){
+    conteudo.innerHTML = `<h1 id="texto1">Alex<h1 id="gb" style="color: #03e9b0;">Gb</h1></h1>
+      <h2 id="texto2">Editor & Motion designer.</h2>
+      <iframe id="videoInicio" width="1050" height="600" src="https://www.youtube.com/embed/f50zz2t54L0?si=hITNBSOeu6ZSGQIb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p id="Assinatura">© 2024 AlexGB. Todos os direitos reservados. developed by <p id="Assinatura2" onclick="acessarGitHub()">Guilherme Neris </p></p>
+
+`
+    tituloPagina.innerHTML = `AlexGb`;
+}
+
+function voltar(){
+
+    acessarInicio();
+}
+
+function acessarContato(){
+
+     conteudo.innerHTML = `<h1 id='contatoTitulo'>Contato</h1> 
+     <p id="subtitulo4">Precisa de um editor? Entre em contato comigo via Twitter ou email.</p>
+     <img id="emailIcon" src="icons/email.svg" alt="">
+     <img id="twitterIcon" src="icons/twitter.png" alt="">
+     <img id="youtubeIcon" src="icons/youtube.png" alt="">
+     <img id="curriculoIcon" src="icons/curriculo.png" alt="">
+     <p id="emailTexto">contatoalexx7@gmail.com</p>
+     <p id="twitterTexto" onclick="acessarTwitter()">@AlexGb7_</p>
+     <p id="youtubeTexto" onclick="acessarYoutube()">@AlexGB07</p>
+     <p id="curriculoTexto" alt="" onclick="acessarCurriculo()">Meu currículo</p>
+     <p id="Assinatura3">© 2024 AlexGB. Todos os direitos reservados. developed by <p id="Assinatura4" onclick="acessarGitHub()">Guilherme Neris </p></p>
+
+`;
+     tituloPagina.innerHTML = `AlexGb | Contato`;
+} 
+
+// São 3 capas de dumps mas por enquanto estão ocultadas (no css como id CapaDump2 e 3)
+
+function acessarDumps(){
+
+    conteudo.innerHTML = `<h1 id='DumpsTitulo'>Dumps</h1>
+    <p id="subtitulo3">Minha coleção de melhores animações mensais reunidas em um só lugar. :D </p>
+    <p id="filtroTexto">Filtrar por ano:</p>
+    <div>
+    <li id="ano2024" onclick="acessarPasta2024()" style="color: aliceblue; font-weight: 600; list-style: none;">2024</li>
+    <li id="ano2025" onclick="acessarPasta2025()">2025</li>
+    </div>
+    <div id="conteudoDumps">
+    <img id="CapaDump1" src="imagens/THUMB_DUMP_01.png" alt="" onclick="acessarDump12024()">   
+    </div>
+`;
+
+   tituloPagina.innerHTML = `AlexGb | Dumps`;
+}
+
+function acessarPasta2024(){
+    ano2024.innerHTML = `<li style="color: aliceblue; font-weight: 600; list-style: none;">2024</li>`;
+    ano2025.innerHTML = `<li style="color: #a3a3a3; list-style: none;">2025</li>`;
+
+    conteudoDumps.innerHTML = acessarDumps();
+
+}
+
+function acessarPasta2025(){
+
+    ano2024.innerHTML = `<li style="color: #a3a3a3; list-style: none; font-weight: normal;">2024</li>`;
+
+    ano2025.innerHTML = `<li style="color: aliceblue; font-weight: 600; list-style: none;">2025</li>`;
+
+    conteudoDumps.innerHTML = ``;
+
+}
+
+function acessarTrabalhos(){
+
+    conteudo.innerHTML = `<h1 id='TrabalhosTitulo'>Trabalhos</h1>
+    <p id="subtitulo2">Experiencia de trabalho com pacote Adobe tentando sempre melhorar a cada trabalho e a cada projeto pessoal. </p>
+    <img id="CapaTrabalho1" src="imagens/VIDEO_CURTOS.png" alt="" onclick="acessarVideosCurtos()">
+    <img id="CapaTrabalho2" src="imagens/VIDEOS_LONGOS_-_CAPA.png" alt="" onclick="acessarVideosLongos()">
+    <img id="CapaTrabalho3" src="imagens/ESTUDOS.png" alt="" onclick="acessarEstudos()">
+    <p id="Assinatura5">© 2024 AlexGB. Todos os direitos reservados. developed by <p id="Assinatura6" onclick="acessarGitHub()">Guilherme Neris </p></p>
+
+`
+
+    tituloPagina.innerHTML = `AlexGb | Trabalhos`;
+
+}
+
+function acessarVideosCurtos() {
+
+    conteudo.innerHTML = `<h1 id='VideosCurtosTitulo'>Vídeos Curtos</h1>
+    <p id="subtitulo2">Criação de vídeos curtos, dinâmicos e impactantes para transmitir sua mensagem de forma rápida e envolvente. </p>
+    <img id="CapaShort1" src="Conteudo/VideosCurtos/arteaoforno.png" alt="" onclick="acessarShort1()">
+`
+    tituloPagina.innerHTML = `AlexGb | Trabalhos - Vídeos Curtos`;
+}
+
+function acessarVideosLongos() {
+
+conteudo.innerHTML = `<h1 id='VideosLongosTitulo'>Vídeos Longos</h1>
+<p id="subtitulo3">Produção de vídeos longos, perfeitos para narrativas completas e conteúdos detalhados.</p>
+<img id="CapaTrabalho1" src="Conteudo/VideosLongos/maxresdefault.jpg" alt="" onclick="acessarVideo1()">
+<img id="CapaTrabalho2" src="Conteudo/VideosLongos/videolongo2.jpg" alt="" onclick="acessarVideo2()">
+<img id="CapaTrabalho3" src="Conteudo/VideosLongos/videolongo3.jpg" alt="" onclick="acessarVideo3()">
+`
+tituloPagina.innerHTML = `AlexGb | Trabalhos - Vídeos Longos`;
+}
+
+function acessarEstudos() {
+
+conteudo.innerHTML = `<h1 id='estudosTitulo'>Estudos</h1>
+<p id="subtitulo5">Aprendizados de cursos, vídeo aulas etc</p>
+<iframe id="CapaTrabalho1" src="https://www.youtube.com/embed/Eatkz7lf21g?si=1GvDW4_6GQdjU8e7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe id="CapaTrabalho2" src="https://www.youtube.com/embed/OpVgbsoiXJs" title="NIKE Air Force 1 | Motion Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe id="CapaTrabalho3" src="https://www.youtube.com/embed/UYuYeawYYTs" title="STARBUCKS | Motion Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe id="CapaTrabalho4" src="https://www.youtube.com/embed/f50zz2t54L0" title="SPOTIFY | Motion Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe id="CapaTrabalho5" src="https://www.youtube.com/embed/aIUHr8F9ekM" title="DRIVE POINT APP - Projeto de Estudo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+`
+tituloPagina.innerHTML = `AlexGb | Trabalhos - Estudos`;
+}
+
+function acessarVideo1(){
+    window.location.href = `https://youtu.be/7BeKD1FOVxg`;
+}
+
+function acessarVideo2(){
+    window.location.href = `https://youtu.be/TQwlP4fszck`;
+}
+
+function acessarVideo3(){
+    window.location.href = `https://youtu.be/61iDDG9BPVo`;
+}
+
+function acessarShort1(){
+    window.location.href = `https://youtube.com/shorts/ZLkfN55KGi8?si=nBGTto0hA7PPN03o`;
+}
+
+function acessarTwitter(){
+    window.location.href = "https://x.com/AlexGb7_";
+}
+
+function acessarYoutube(){
+    window.location.href = "https://www.youtube.com/@AlexGb7";
+}
+
+function acessarCurriculo(){
+    window.location.href = "https://drive.google.com/file/d/1qvAJqz4SwH_LPIHET-82KhdXDqGoLbfR/view?usp=sharing";
+}
+
+function acessarDump12024(){
+    window.location.href = "https://youtu.be/C3L0RT7VXT8?si=cp4dPsgZhH2EPRKX";
+}
+
+function acessarGitHub(){
+    window.location.href = "https://github.com/GuilhermeNeris";
+}
+
+
+</script>
